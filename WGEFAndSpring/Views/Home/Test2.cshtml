@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Test2";
+}
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<h2>Test2</h2>
+<input id="btn" type="button" />
+ 
+<script type="text/javascript">
+    $(function () {
+        $("#btn").click(function () {
+            
+            var chatIdList = [
+                "wj",
+                "cc",
+                "ww"
+            ];
+            $.ajax({
+                url: "/api/TestAPI1/AddTest2",
+                type: "Post",
+                contentType: 'application/json; charset=utf-8',//将json数据以request payload的形式发起请求
+                data: JSON.stringify(chatIdList),
+                success: function (data) {
+                    var obj = data;
+                }
+            });
+            $.ajax({
+                url: "/api/TestAPI1/AddTest",
+                type: "Post",
+                //contentType: 'application/json; charset=utf-8',//将json数据以request payload的形式发起请求
+                data: {Name:"wj",Id:1},
+                success: function (data) {
+                    var obj = data;
+                }
+            });
+        })
+    });
+   
+</script>
+

@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    @ViewData["ShowLog"]
+
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p>Learn more &raquo;</p>
+     <input  id="btn" type="button" >
+    按点击
+    </input>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default"  >Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+
+        $("#btn").click(function () {
+            alert('w');
+            var chatIdList = [
+                "wj",
+                "cc",
+                "ww"
+            ];
+            //$.ajax({
+            //    url: "/api/TestAPI1/AddTest2",
+            //    type: "Post",
+            //    contentType: 'application/json; charset=utf-8',//将json数据以request payload的形式发起请求
+            //    data: JSON.stringify(chatIdList),
+            //    success: function (data) {
+            //        var obj = data;
+            //    }
+            //});
+            //$.ajax({
+            //    url: "/api/TestAPI1/AddTest",
+            //    type: "Post",
+            //    //contentType: 'application/json; charset=utf-8',//将json数据以request payload的形式发起请求
+            //    data: {Name:"wj",Id:1},
+            //    success: function (data) {
+            //        var obj = data;
+            //    }
+            //});
+        })
+    });
+    $(function () {
+        //$.ajax({
+        //    url: "/Home/OldSiteTest",
+        //    type: "GET",
+        //    data: {},
+        //    async: false,
+        //    success: function (data) {
+        //        var obj = data;
+        //        alert(obj.task1);
+        //        alert(obj.task2);
+        //    }
+        //});
+    });
+</script>
