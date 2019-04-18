@@ -43,6 +43,7 @@ namespace ConsoleEF
             //TestDB();
             //GetUpdateTimeStamp();
             TestTran2();
+            Console.WriteLine("测试代码 !");
         }
 
         #region 时间戳timestamp）类型
