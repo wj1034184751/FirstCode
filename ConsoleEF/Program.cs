@@ -18,6 +18,7 @@ namespace ConsoleEF
         private static int number = 0;
         private static object locker = new object();
         static int money = 10000;
+
         static void Main(string[] args)
         {
             //var resultss = Math.Log(100000000, 10);
@@ -35,14 +36,12 @@ namespace ConsoleEF
             //DownLoad2();
             //Console.WriteLine("skfdsklafjsafj");
 
-
             //UserAsync();
             //List<string> list = UserAsync2().Result;
 
-
             //TestDB();
             //GetUpdateTimeStamp();
-            TestTran2();
+            //TestTran2();
             Console.WriteLine("测试代码 !");
         }
 
@@ -53,7 +52,6 @@ namespace ConsoleEF
             {
                 Stopwatch sw = new Stopwatch();
                 sw.Start();
-
 
                 var list = db.MyEntities.Where(d => d.Id == 1).FirstOrDefault();
                 var list2 = db.MyEntities.Where(d => d.Id == 2).FirstOrDefault();

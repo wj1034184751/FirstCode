@@ -29,6 +29,12 @@ namespace TestDapper
             //var result = connection.Execute("Insert into Customer values (@Name, @Age, @Sex,@IsDelete)", usersList);
             var query = connection.Query<Customer>("select * from Customer where Name=@Name", new { Name = "jack" });
 
+            var i = 1;
+            if(i>1)
+            {
+
+            }
+            int a = 1;
         }
     }
     public partial class Customer

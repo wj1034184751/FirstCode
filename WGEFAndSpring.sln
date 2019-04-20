@@ -31,6 +31,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperModel", "DapperModel\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDapper", "TestDapper\TestDapper.csproj", "{D7F4A09F-A4B9-4D5B-9A97-C42FE7DDB6D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Thirdparty", "Thirdparty", "{DEDDE44B-9BE5-4717-8C80-D54AD594D554}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eWorld.StyleCop.ruleset", "eWorld.StyleCop.ruleset", "{324EDAF9-4342-4E72-B67D-C68E4B7283AB}"
+	ProjectSection(SolutionItems) = preProject
+		Configs\eWorld.ruleset = Configs\eWorld.ruleset
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -257,6 +264,7 @@ Global
 		{2BFDC785-5E2A-4B26-91A5-4F6F3CCC7E95} = {123C51FD-99B4-432A-A3DF-31C9DAE81A0E}
 		{D1C78569-E65E-4690-821E-92AA851F614E} = {C6ABB7D1-0225-4D19-84E1-DB6421399EB6}
 		{317FCA33-57CA-4FBA-86C5-56987BA82E68} = {C6ABB7D1-0225-4D19-84E1-DB6421399EB6}
+		{324EDAF9-4342-4E72-B67D-C68E4B7283AB} = {DEDDE44B-9BE5-4717-8C80-D54AD594D554}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {36D17604-0C63-43EB-917F-939D6C3D7ECA}
